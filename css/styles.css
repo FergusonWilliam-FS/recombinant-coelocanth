@@ -1,4 +1,153 @@
+/* import fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800|Open+Sans:300,400,600,700');
+
 header, section, footer, aside, nav, article, figure, figcaption {
 	display: block;
 }
+
+/* full reset */
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/* set our html styles */
+
+html { 
+    background-color: white; /* define our background color */
+    width: 100%; /* set width for 100% to avoid horizontal scrolling */
+    font-family: Poppins, "Open Sans", sans-serif;
+} 
+
+/* set our body */
+body {
+    min-height: 100vh; /* set to 100 verticle height to avoid vertical scrolling */
+    max-width: 108rem; /* set our body to 1080px */
+    margin: auto; /* set for automatic margins */
+}
+
+img {
+    height: 12rem;
+    width: 12rem;
+}
+
+figure {
+    float: right;
+}
+
+figcaption {
+    margin-left: 4.5rem;
+}
+
+/* set up our header */
+
+header {
+    max-width: 100%; /* set header width */
+}
+    /* define new header class for image */
+    header .img {
+        
+            max-width: 100%;
+            height: calc(108rem / 3);
+            background: url('../img/banner1.2.jpg');
+            background-size: cover;
+            margin-bottom: 4rem;
+    }
+
+/* set up our nav styles and behaviors */
+
+ul, li {
+    display: inline-block; /* nav elements go left to right */
+    margin: 2rem; /* margin 20px all around */
+	text-transform: uppercase;
+}
+
+nav {
+	text-align: right;
+    font-weight: 600;
+    margin: 10% 5% 5% 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+	font-size: inherit;
+}
+    a:hover {
+        color: orange;
+    }
+
+p {
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* set up aside style and behavior */
+
+aside {
+    float: left;
+}
+    aside span {
+        float: right;
+    }
+
+    aside span:hover {
+        color: orange;
+    }
+
+    aside button {
+        float: left;
+        height: 4rem;
+        width: 8rem;
+        background-color: orange;
+
+    }
+
+    aside button:hover {
+        background-color:rgb(9, 253, 9)
+    }
+
+
+/* section styles and behavior */
+ 
+section {
+    float: right;
+    width: 50%;
+    margin-right: 25%;
+}
+
+
+
+section h3 {
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+}
+
+section img {
+    margin-top: 2rem;
+    margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
